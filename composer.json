@@ -1,0 +1,26 @@
+{
+    "name": "neher-halder/inquiry",
+    "description": "It can save a inquiry in database as well as it sends en email to admin.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neher Halder",
+            "email": "neher1994@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Neher\\Inquiry\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neher\\Inquiry\\InquiryServiceProvider"
+            ]
+        }
+    }
+}
