@@ -38,10 +38,19 @@ Create a url in your page
 
 	<a href="{{url('inquries/create')}}">Forge</a>
 
+## Email Configuration
+
+After submitting the form it also send an email. You shound change the email address from config\inquiry.php 
+
+	Change the .env
+	MAIL_DRIVER=log
+
 ## Publishing Vendor
 After publishing you can find the configuration file in config\inquiry.php and views are views\vendor\inquiry directory
 
 	php artisan vendor:publish --provider="Neher\Inquiry\InquiryServiceProvider::class"
+
+
 
 
 
