@@ -1,6 +1,6 @@
 ## Simple Inquiry Form
 
-It can save a inquiry in database as well as it send en email to admin.
+It can save a inquiry in database as well as it send an email to admin.
 
 ## Installation
 
@@ -18,4 +18,33 @@ Add a new line to the `providers` array:
 
 	Neher\Inquiry\InquiryServiceProvider::class
 
-Now you're ready to start using the shoppingcart in your application.
+Now you're ready to start using the Simple Inquiry Form in your application.
+
+## Uses
+
+Create a layout(master) file in view directory
+
+	layouts\frontend\app.blade.php
+
+Create yield in app.blade.php file
+
+	@yield('content')
+
+Migrate database
+
+	php artisan migrate
+
+Create a url in your page
+
+	<a href="{{url('inquries/create')}}">Forge</a>
+
+## Publishing Vendor
+After publishing you can find the configuration file in config\inquiry.php and views are views\vendor\inquiry directory
+
+	php artisan vendor:publish --provider="Neher\Inquiry\InquiryServiceProvider::class"
+
+
+
+
+
+
