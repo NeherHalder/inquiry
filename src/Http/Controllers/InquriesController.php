@@ -40,6 +40,7 @@ class InquriesController extends Controller
      */
     public function store(InquiryStore $request)
     {
+                
         $inquiry = new Inquiry;
 
         $inquiry->name = $request->name;

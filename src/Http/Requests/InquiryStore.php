@@ -25,9 +25,8 @@ class InquiryStore extends FormRequest
     {
         return [
             'name'=>['required', 'string', 'max:50', 'min:3'],
-            'email'=>['required', 'email', 'max:191', 'unique:inquiries'],
-            'mobile'=>['required', 'string', 'max:14', 'min:11'],
-            'body'=>['required', 'string', 'min:3']
+            'mobile'=>['required', 'digits_between:11,14'],
+            'message'=>['required', 'string', 'min:3']
         ];
     }
 }
