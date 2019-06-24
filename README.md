@@ -36,7 +36,7 @@ Migrate database
 
 Create a url in your page
 
-	<a href="{{url('inquries/create')}}">Forge</a>
+	<a href="{{url('inquries/create')}}">Show Inquiry Form</a>
 
 ## Email Configuration
 
