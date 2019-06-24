@@ -12,7 +12,7 @@ Run the Composer require command from the Terminal:
     
 If you're using Laravel 5.5 or upper version, this is all there is to do. 
 
-Should you still be on version 5.4 of Laravel, the final steps for you are to add the service provider of the package and alias the package. To do this open your `config/app.php` file.
+Should you still be on version 5.4 of Laravel, the final steps for you are to add the service provider of the package. To do this open your `config/app.php` file.
 
 Add a new line to the `providers` array:
 
@@ -22,7 +22,7 @@ Now you're ready to start using the Simple Inquiry Form in your application.
 
 ## Uses
 
-Create a layout(master) file in view directory
+Create a `layout`(master) file in view directory
 
 	layouts\frontend\app.blade.php
 
@@ -40,13 +40,13 @@ Create a url in your page
 
 ## Email Configuration
 
-After submitting the form it also send an email. You shound change the email address from config\inquiry.php 
+After submitting the form it also send an email. You shound change the email address from `config\inquiry.php` 
 
 	Change the .env
 	MAIL_DRIVER=log
 
 ## Publishing Vendor
-After publishing you can find the configuration file in config\inquiry.php and views are views\vendor\inquiry directory
+After publishing you can find the configuration file in `config\inquiry.php` and views are `views\vendor\inquiry` directory
 
 	php artisan vendor:publish --provider="Neher\Inquiry\InquiryServiceProvider::class"
 
