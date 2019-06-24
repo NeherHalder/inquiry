@@ -22,11 +22,11 @@ Now you're ready to start using the Simple Inquiry Form in your application.
 
 ## Uses
 
-Create a `layout`(master) file in view directory
+Create a `layout` (master) file in view directory
 
 	layouts\frontend\app.blade.php
 
-Create yield in app.blade.php file
+Create `yield` in `app.blade.php` file
 
 	@yield('content')
 
